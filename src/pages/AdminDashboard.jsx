@@ -12,7 +12,7 @@ import {
 
 import "./AdminDashboard.css";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://ear-care-stherbal.onrender.com/api";
 
 const ORDER_STATUSES = [
   "Pending",

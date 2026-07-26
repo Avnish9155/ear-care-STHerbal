@@ -35,19 +35,22 @@ function Inquiry() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/inquiries", {
-        method: "POST",
+      const response = await fetch(
+        "https://ear-care-stherbal.onrender.com/api/inquiries",
+        {
+          method: "POST",
 
-        headers: {
-          "Content-Type": "application/json",
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify({
+            fullName: formData.fullName,
+            age: formData.age,
+            mobileNumber: formData.mobileNumber,
+          }),
         },
-
-        body: JSON.stringify({
-          fullName: formData.fullName,
-          age: formData.age,
-          mobileNumber: formData.mobileNumber,
-        }),
-      });
+      );
 
       const data = await response.json();
 

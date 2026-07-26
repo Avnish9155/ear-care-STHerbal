@@ -114,15 +114,18 @@ function OrderForm() {
       // SEND ORDER TO BACKEND
       // ==========================================
 
-      const response = await fetch("http://localhost:5000/api/orders", {
-        method: "POST",
+      const response = await fetch(
+        "https://ear-care-stherbal.onrender.com/api/orders",
+        {
+          method: "POST",
 
-        headers: {
-          "Content-Type": "application/json",
+          headers: {
+            "Content-Type": "application/json",
+          },
+
+          body: JSON.stringify(orderData),
         },
-
-        body: JSON.stringify(orderData),
-      });
+      );
 
       // Convert response to JSON
       const data = await response.json();
