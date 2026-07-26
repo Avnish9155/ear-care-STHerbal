@@ -23,7 +23,9 @@ function Footer() {
         <div className="footer-contact">
           <h3>Customer Support</h3>
 
-          <p>🕐 10 AM - 6 PM</p>
+          <p>📞 Helpline: 7878463670</p>
+
+          <p>🕐 Customer Support: 24×7 Available</p>
 
           <p>🚚 Free Delivery Available</p>
 

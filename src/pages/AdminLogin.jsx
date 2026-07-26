@@ -19,7 +19,7 @@ function AdminLogin() {
 
     // Admin credentials
     const ADMIN_USERNAME = "admin";
-    const ADMIN_PASSWORD = "Abhi9155@#";
+    const ADMIN_PASSWORD = "Abhi8084@#";
 
     setTimeout(() => {
       if (username.trim() === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
